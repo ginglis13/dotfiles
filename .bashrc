@@ -14,7 +14,7 @@ export EDITOR=/usr/bin/vim
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-export PATH=/home/ginglis/.local/bin/:$PATH
+export PATH=/home/ginglis/.local/bin/:$PATH:/home/ginglis/.gem/ruby/2.6.0/bin
 
 # show me dat branch
 parse_git_branch() {
