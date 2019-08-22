@@ -1,6 +1,6 @@
 # dotfiles
 
-This repository contains most if not all of the dotfiles/config files I use on my machine. I keep this up to date w my arch linux machine. Screenshots included below. Configs can mostly be found in the `.config/` dir, with the exception being vim, with `.vim/` containing those files.
+This repository contains most if not all of the dotfiles/config files I use on my machine. Screenshots included below. Configs can mostly be found in the `.config/` dir, with the exception being vim, with `.vim/` containing those files.
 
 
 ### Screenshots
