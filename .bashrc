@@ -16,8 +16,11 @@ export EDITOR=/usr/bin/vim
 
 export PATH=/home/ginglis/.local/bin/:$PATH
 
+# show me dat branch
 parse_git_branch() {
-		     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+	if [[ $PWD/ = /home/ginglis/projects/* ]] || [[ $PWD/ = /home/ginglis/school/*  ]]; then
+		git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+	fi
 }
 
 #export PS1="\[\033[38;5;33m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\[$(tput sgr0)\]\[\033[38;5;6m\]\h\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;242m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\] \n\\$ \[$(tput sgr0)\]"
