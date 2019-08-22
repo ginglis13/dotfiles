@@ -35,6 +35,17 @@ I use [i3-gaps](https://github.com/Airblader/i3) as my window manager. I don't t
 
 I recently switched over to xfce's terminal from [st](https://st.suckless.org/). st was just a bit too much for my needs, and made some things more difficult than they needed to be (i.e., scrolling in the terminal). xfce has already proven to be much more fitting for my use case. I use the [Nord theme for xfce-terminal](https://github.com/arcticicestudio/nord-xfce-terminal) with some extra tweaks to the background coloration to fit in with the rest of my overall theme.
 
+I use a custom `PS1` that can be found in my [.bashrc](https://github.com/ginglis13/dotfiles/blob/master/.bashrc). A handy bash function I have for parsing git branches is in there as well. It makes keeping track of the branch I'm on in a repo/project much easier. I recently added a check to allow for it to ignore this repo, since it's in my home dir :)
+
+```bash
+parse_git_branch() {
+	if [ $(git remote get-url origin | sed -En 's/.*[/](.*)/\1/p') != dotfiles.git ]; then
+		git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+	fi
+}
+
+```
+
 ## polybar
 
 Most of my changes to polybar are purely aesthetic. I use [Material Icons](https://material.io/resources/icons/?style=baseline) instead of the default, and I've changed some coloring up to match the rest of my theme.
