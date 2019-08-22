@@ -19,7 +19,6 @@ export PATH=/home/ginglis/.local/bin/:$PATH
 # show me dat branch
 parse_git_branch() {
 	if [ $(git remote get-url origin | sed -En 's/.*[/](.*)/\1/p') != dotfiles.git ]; then
-#	if [[ $PWD/ = /home/ginglis/projects/* ]] || [[ $PWD/ = /home/ginglis/school/*  ]]; then
 		git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 	fi
 }
