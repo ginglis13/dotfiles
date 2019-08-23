@@ -18,7 +18,7 @@ export PATH=/home/ginglis/.local/bin/:$PATH:/home/ginglis/.gem/ruby/2.6.0/bin
 
 # show me dat branch
 parse_git_branch() {
-	if [ $(git remote get-url origin | sed -En 's/.*[/](.*)[.].*/\1/p') != dotfiles ]; then
+	if [ "$(git remote get-url origin 2> /dev/null | sed -En 's/.*[/](.*)[.].*/\1/p')" != dotfiles ]; then
 		git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 	fi
 }
