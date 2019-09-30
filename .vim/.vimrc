@@ -95,3 +95,13 @@ syntax on
 colorscheme dracula
 
 set timeoutlen=1000 ttimeoutlen=0
+
+" Your cursor goes back to where you were when you last closed the file
+augroup Vim
+    autocmd!
+    autocmd BufReadPost *
+  \ if line("'\"") > 0 && line("'\"") <= line("$") |
+  \   exe "normal g`\"" |
+  \ endif
+augroup END
+
