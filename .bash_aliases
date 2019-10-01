@@ -20,3 +20,9 @@ alias sshnd='ssh student05.cse.nd.edu'
 alias ndvpn='openconnect --user=$USER --passwd-on-stdin vpnaccess.nd.edu/mfa'
 alias sshappa='ssh appa.ndlug.org'
 alias sshjawn='ssh jawn.dhcp.nd.edu'
+
+# Git
+alias gst="git status"
+alias glog="git log --oneline --decorate --graph"
+alias gpsup="git push --set-upstream origin $(git_current_branch)"
+alias canada="git commit --amend --no-edit"
