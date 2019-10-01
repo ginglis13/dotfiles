@@ -24,5 +24,5 @@ alias sshjawn='ssh jawn.dhcp.nd.edu'
 # Git
 alias gst="git status"
 alias glog="git log --oneline --decorate --graph"
-alias gpsup="git push --set-upstream origin $(git_current_branch)"
+alias gpsup="git push --set-upstream origin $(parse_git_branch)"
 alias canada="git commit --amend --no-edit"
