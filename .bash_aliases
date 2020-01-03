@@ -2,6 +2,8 @@
 
 alias ll='ls -l'
 alias la='ls -A'
+alias setbg='feh --bg-scale /home/ginglis/pictures/bg.png &'
+
 
 # no steam locomotives here
 alias sl='ls --color=auto'
