@@ -52,7 +52,7 @@ bindsym Mod1+Shift+g exec --no-startup-id steam
 bindsym Mod1+Shift+m exec --no-startup-id minecraft
 
 # screenshot
-bindsym Mod1+Shift+s exec --no-startup-id scrot
+bindsym Mod1+Shift+s exec --no-startup-id scrot -s -e 'mv $f ~/pictures/screenshots/'
 
 # Audio
 bindsym XF86AudioRaiseVolume exec alsamixer -q set Master 2dB+ unmute
