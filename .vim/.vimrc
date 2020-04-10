@@ -46,13 +46,15 @@ let g:AutoPairsFlyMode = 0
 let g:AutoPairsShortcutBackInsert = '<M-b>'
 "++++++++++++++++++ALE+++++++++++++++++++++++++
 "Plugin 'w0rp/ale'
-"let g:ale_completion_enabled = 1
+let g:ale_completion_enabled = 1
 "++++++++++++++++++Sneak+++++++++++++++++++++++++
 Plugin 'justinmk/vim-sneak'
 "++++++++++++++++++NerdCommenter+++++++++++++++++++++++++
 Plugin 'scrooloose/nerdcommenter'
 let g:NERDSpaceDelims = 1
 let g:NERDTrimTrailingWhitespace = 1
+"++++++++++++++++++latex-live-preview++++++++++++++++++++
+Plugin 'ying17zi/vim-live-latex-preview'
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 call vundle#end()
 filetype plugin indent on
