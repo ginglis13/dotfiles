@@ -2,7 +2,7 @@
 
 alias ll='ls -l'
 alias la='ls -A'
-alias setbg='feh --bg-scale /home/ginglis/pictures/bg.png &'
+alias setbg='feh --bg-scale /home/ginglis/pictures/bg.png'
 
 
 # no steam locomotives here
@@ -23,7 +23,7 @@ alias ndvpn='openconnect --user=$USER --passwd-on-stdin vpnaccess.nd.edu/mfa'
 alias sshappa='ssh appa.ndlug.org'
 alias sshjawn='ssh jawn.dhcp.nd.edu'
 
-alias sshpi='ssh pi@67.161.39.80'
+alias sshpi='ssh pi@192.168.1.214'
 
 # Git
 alias gst="git status"
